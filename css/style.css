@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(102, 102, 102);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data {
+  background-color: rgb(163, 229, 255);
+  width: 500px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px;
+  transition: ease 1.5s;
+  min-width: 500px;
+}
+
+.data:hover {
+  height: 850px;
+}
+
+.poke {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(163, 0, 0);
+  border-radius: 20px 20px 0 0;
+  border-bottom: 5px solid white;
+}
+
+.center-poke {
+  width: 167px;
+  height: 100%;
+}
+
+.dex {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(163, 0, 0);
+  border-radius: 0 0 20px 20px;
+  border-top: 5px solid white;
+}
+
+.c-uno {
+  width: 166px;
+  height: 166px;
+  clip-path: circle(75% at top left);
+  background-color: rgb(53, 0, 0);
+  border-radius: 20px;
+}
+
+.c-uno-d {
+  width: 156px;
+  height: 156px;
+  clip-path: circle(75% at top left);
+  background-color: rgb(163, 0, 0);
+  border-radius: 20px;
+}
+
+.c-dos {
+  width: 90px;
+  height: 90px;
+  clip-path: circle(75% at top left);
+  background-color: rgb(53, 0, 0);
+  border-radius: 20px;
+}
+
+.c-dos-d {
+  width: 80px;
+  height: 80px;
+  clip-path: circle(75% at top left);
+  background-color: rgb(163, 0, 0);
+  border-radius: 20px;
+}
+
+.right-poke {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.c-tres {
+  width: 166px;
+  height: 166px;
+  clip-path: circle(75% at top right);
+  background-color: rgb(53, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.c-tres-d {
+  width: 156px;
+  height: 156px;
+  clip-path: circle(75% at 100% 0);
+  background-color: rgb(163, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.c-cuatro {
+  width: 90px;
+  height: 90px;
+  clip-path: circle(75% at top right);
+  background-color: rgb(53, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.c-cuatro-d {
+  width: 80px;
+  height: 80px;
+  clip-path: circle(75% at top right);
+  background-color: rgb(163, 0, 0);
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.center-poke {
+  display: flex;
+  align-items: flex-end;
+}
+
+.c-cinco {
+  width: 167px;
+  height: 167px;
+  clip-path: circle(50% at 50% 100%);
+  background-color: white;
+  margin-bottom: -5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.c-cinco-d {
+  width: 157px;
+  height: 157px;
+  clip-path: circle(50% at 50% 100%);
+  background-color: rgb(0, 0, 0);
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.c-cinco-centro {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50% at 50% 100%);
+  background-color: rgb(163, 229, 255);
+}
+
+/* parte de abajo */
+.left-dex {
+  display: flex;
+  align-items: flex-end;
+}
+
+.c-seis {
+  width: 166px;
+  height: 166px;
+  clip-path: circle(75% at 0 100%);
+  background-color: rgb(53, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.c-seis-d {
+  width: 156px;
+  height: 156px;
+  clip-path: circle(75% at 0 100%);
+  background-color: rgb(163, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.c-siete {
+  width: 90px;
+  height: 90px;
+  clip-path: circle(75% at 0 100%);
+  background-color: rgb(53, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.c-siete-d {
+  width: 80px;
+  height: 80px;
+  clip-path: circle(75% at 0 100%);
+  background-color: rgb(163, 0, 0);
+  border-radius: 20px;
+}
+
+.right-dex{
+  display: flex;
+  align-items: flex-end;
+}
+
+.c-ocho {
+  width: 166px;
+  height: 166px;
+  clip-path: circle(75% at 100% 100%);
+  background-color: rgb(53, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.c-ocho-d {
+  width: 156px;
+  height: 156px;
+  clip-path: circle(75% at 100% 100%);
+  background-color: rgb(163, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.c-nueve {
+  width: 90px;
+  height: 90px;
+  clip-path: circle(75% at 100% 100%);
+  background-color: rgb(53, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.c-nueve-d {
+  width: 80px;
+  height: 80px;
+  clip-path: circle(75% at 100% 100%);
+  background-color: rgb(163, 0, 0);
+  border-radius: 20px;
+}
+
+.center-dex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.c-diez {
+  width: 167px;
+  height: 167px;
+  clip-path: circle(50% at 50% 0);
+  background-color: white;
+  margin-top: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.c-diez-d {
+  width: 157px;
+  height: 157px;
+  clip-path: circle(50% at 50% 0);
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} 
+
+.c-diez-centro {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50% at 50% 0);
+  background-color: rgb(163, 229, 255);
+}
+
+.data section {
+  padding-top: 50px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  transition: ease 1.5s;
+}
+
+.data:hover section {
+  padding: 10px;
+  height: 450px;
+  width: 100%;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section img {
+  width: 150px; 
+  height: auto;
+}
+
+.form input {
+  margin: 3px 5px;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(163, 0, 0);
+  color: white;
+  caret-color: rgb(0, 255, 34);
+  text-align: center;
+}
+
+.form input::placeholder{
+  color: white;
+}
+
+.form button {
+  margin: 5px 0;
+  background-color: rgb(255, 215, 0);
+  padding: 10px;
+  color: black;
+}
+
+.spects {
+  width: 50%;
+  height: 40px;
+  background-color: rgb(116, 116, 160);
+  color: black;
+}
+
+section p {
+  width: 70%;
+  margin: 4px 0;
+  font-size: small;
+}
+
+#s-name{
+  color: rgb(85, 0, 85);
+  text-align: center;
+}
+
+#s-type {
+  color: chocolate;
+  text-align: center;
+}
+
+#s-stats {
+  color: rgb(0, 78, 0);
+  text-align: center;
+}
+
+#s-mov {
+  color: rgb(88, 0, 105);
+  text-align: center;
+}
