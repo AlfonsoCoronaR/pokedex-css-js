@@ -311,7 +311,7 @@
 }
 
 .form {
-  width: 50%;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,8 +341,10 @@ section img {
 .form button {
   margin: 5px 0;
   background-color: rgb(255, 215, 0);
-  padding: 10px;
+  padding: 5px;
   color: black;
+  border-radius: 20px;
+  width: 50%;
 }
 
 .spects {
@@ -376,4 +378,14 @@ section p {
 #s-mov {
   color: rgb(88, 0, 105);
   text-align: center;
+}
+
+.form h3 {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.form label {
+  text-align: center;
+  margin: 5px 0;
 }

@@ -23,6 +23,8 @@ function obtener() {
         stype.innerHTML = "";
         sstats.innerHTML = "";
         smove.innerHTML = "";
+        let titulo = d.getElementById("titulo");
+        titulo.style.display = "none";
         /* console.log(data); */
         let pokeImg = data.sprites.front_default;
         let nombre = data.name;
@@ -40,8 +42,9 @@ function obtener() {
       smove.innerHTML = "";
       const pokePhoto = document.getElementById("sprite");
       pokePhoto.src = "./img/pokeball.png";
-      let name = d.createTextNode(`Este pokemón no existe`);
-      sname.appendChild(name);
+      sname.innerHTML = "<h1>Este pokemón no existe</h1>";
+      /* let name = d.createTextNode(`Este pokemón no existe`);
+      sname.appendChild(name); */
       sname.style.textAlign = "center";
       console.error('Pokemón no existente')
     })
